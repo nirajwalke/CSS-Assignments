@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Description" content="Responsive-Web-Design">
+    <title>Responsive-Web-Design</title>
+    <style>
+    *{
+        box-sizing: border-box;
+    }
+    .header{
+        background-color: cornflowerblue;
+        padding: 15px;
+        text-align: center;
+        color: white;
+    }
+    .nav{
+        float: left;
+        width: 20%;
+        text-align: center;
+    }
+    .nav a{
+        background-color: #07c;
+        padding: 8px;
+         margin-top:7px ;
+         display: block;
+         width: 100%;
+         color: white;
+         text-decoration: none;
+     }
+     .main{
+         float: left;
+         width: 60%;
+         padding: 0 auto;
+         text-align: justify;
+     } 
+     .right{
+         background-color: #07c;
+         color: white;
+         float: left;
+         width: 20%;
+         pad: 15px;
+         margin-top: 7px;
+         text-align: left;
+     }
+     .footer{
+         background-color: #07c;
+         text-align: center;
+         padding: 10px;
+         margin-top: 7px;
+         color: white;
+
+     }
+     @media only screen and (max-width:620px){
+         .nav, .main, .right{
+             width: 100%;
+         }
+     }
+
+    
+    </style>
+</head>
+<body>
+     <div class="header"> <h1>SkillSafari</h1> </div>
+     <div style="overflow:auto">
+     <div class="nav">
+         <a href="#">HOME</a>
+         <a href="#">Alchemyst Program</a>
+         <a href="#">Virtual Internship</a>
+         <a href="#">Events</a>
+     </div>
+    
+    
+
+     <div class="main">
+         <h2>What is an Alchemyst program?</h2>
+         <p>Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero voluptate alias, autem sint voluptatum optio, voluptatibus suscipit, officia dignissimos ducimus possimus repellat. Sunt, minima officiis. Laboriosam magni cumque non libero? adipisicing elit. Repellat, iste nemo laudantium, laboriosam eius totam vitae neque ea rem nulla ullam cumque. Deserunt error modi molestiae debitis sint cupiditate odit.</p>
+     </div>
+
+     <div class="right">
+         <h2>Upcoming Alchemyst Career Path Program</h2>
+         <ul>
+             <li>DataScience and Analytic</li>
+             <li>Artificial Intelligence</li>
+             <li>Machine Learning</li>  
+         </ul>
+        </div>
+    </div>
+     <div class="footer">
+         Copyright@SkillSafari.in ,2021 
+     </div>
+     
+
+</body>
+</html>

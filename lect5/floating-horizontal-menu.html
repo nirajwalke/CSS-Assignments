@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Description" content="Floating Horizontal Menu"> 
+    <title>Floating-Horizontal-Menus</title>
+    <style>
+        /* 
+        Display properties- used to control the behaviour of displaying the elements on the page.
+        display:none;  -  will hide the element on the html page.
+        display:block;  -  will display my element as block element.
+        dislpay:inline;  -  will display my element as inline element.
+        */
+        ul{
+            background-color: rgb(1, 1, 14);
+            list-style-type:none;
+            overflow: hidden;
+            /* overflow: visible; */
+        }
+        ul li{
+            float: left;
+            /* float: right; */
+        }
+        ul li a{
+            display: inline-block;
+            color:white;
+            padding: 14px 14px 16px 16px;
+            text-decoration:none;   
+        }
+        ul li a:hover{
+            color:darkkhaki;
+        }
+
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="#">Menu</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Description" content="CSS-Floating Images">
+    <title>myresume</title>
+    <style>
+       .position{
+           position: fixed;
+            top: 0;
+           right: 0;
+         width: 300px;
+       border: 3px solid #73AD21;
+       background-color: slateblue;
+    }
+        
+          .float-right{
+            float: right;  
+        }
+        .color{
+            color: rgb(2, 2, 14);
+        }
+        .clearfix::after{
+            content: "";
+            display: block;
+            clear: both;}
+    
+        body{
+            margin:40px;
+            padding: 80px;
+            border-style: double;
+            font-family:Arial, Helvetica, sans-serif;
+            border-radius: 10px;
+            border-width: 5px;
+            border-color: blueviolet;
+            background: linear-gradient(90deg, rgba(63,94,251,1) 0%, rgba(252,247,70,0.9051995798319328) 100%);
+            opacity: 1;
+            z-index: -1;
+        }
+        .underline{
+            text-decoration: underline;   
+            color: lightblue;
+        }
+        .bolder{
+            font-weight: bolder;
+        }
+        .arranged{
+            height: 200px;
+            width: 600px;
+            margin: 10px;
+            /* border: 5px solid green; */
+            text-align: center;
+            font-family:cursive;
+        }
+        .decoration::after{
+            content:'' ; 
+          display: block;
+          color:blue;
+           background-color: red;  
+          width:330px;
+          height: 15px;
+          
+        }
+        .decoration::before{
+            content:'' ; 
+          display: block;
+          color:blue;
+           background-color: red;  
+          width:330px;
+          height: 15px; 
+
+        }
+        Table{
+          font-family: initial;
+            font-size: 12px;
+            letter-spacing: .5mm;
+            line-height: 1cm;
+            font-weight: bold; 
+            border-style: solid;
+            border-color:teal;
+            border-width: 5px;
+            padding: 3px;
+        
+        }
+            .bold{
+                font: weight 900px;;
+            }
+            .font{
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-weight: bold;
+            }
+            .para{
+                font-weight: bolder;
+            }
+            .thick{
+                font-weight:bolder;
+            }
+            .move{
+                float: right;
+            }
+            .dash{
+               text-decoration: underline; 
+               content-visibility:hidden ;
+              ;
+
+            }
+
+    </style>
+</head>
+<body>
+    <div>
+        <h3 class="position">Niraj Walke</h3>
+    </div>
+    <!-- 
+        The position CSS property sets how an element is positioned in a document. The top, right, bottom, and left properties determine the final location of positioned elements.
+        eader{
+ The postion property specifies the type of positioning method u
+sed for an element
+ postion:fixed;-
+is postioned relative to viewport,which menas it always stays in the same placed
+ even if page is scrolled
+ The z-index property sepcifies the stack order of an element.
+ The font-family property is used to specify the font of the text.
+ The margin-bottom property sets the bottom margin of an element.
+ The font-size property used to increase or decrease the font size.
+ text-align:-used to apply different align properties to the text.
+ background-color:-used to give background a color.
+ ble{
+ The boxshadow property attaches one or more shadows to an element.
+ The CSS border properties allow you to specify the style, width, and
+color of an element's border.
+he borderstyle property specifies what kind of border to display.The borderstyle property specifies what kind of border to display.*/
+
+ <h3></h3>-This is for heading.
+ <table>-This HTML element represents tabular data.
+ <tr>-This HTML element defines a row of cells in a table.
+ <th>-
+This HTML element defines a cell as header of a group of table cells.
+ <td>-
+This HTML element defines a cell of a table that contains data. It participate
+ in the table model.
+ 1.Definition List - <dl><dt></dt><dd></dd></dl>
+ 2.Ordered List - <ol><li></li></ol>
+ 3.unordered List - <ul><li></li></ul>
+ <h1></h1>- This is for heading
+ <p></p>-This is for paragraph
+ <a>-
+is called anchor tag.It is used to link other pages and URL.It also can be use
+to tag reference on same page.
+ <a href="Pagelink/URL">content</a>-Also has attributes and anchor tag
+ <div></div>- Is known as divison tag & is used in HTML to make divisions
+ of content in the web page like( text,images,header,footer,navigation bar 
+
+ The <span> tag is an inline container used to mark up a part of a text
+ or a part of a document.The <span> tag is much like the <div> element, but 
+div> is a block-level element and <span> is an inline element.
+ The id selector uses the id attribute of an HTML element to select a s
+pecific element.The id of an element is unique within a page, so the id select
+or is used to select one unique element!
+ -
+To select an element with a specific id, write a hash (#) character, followed
+by the id of the element.
+ The opacity property specifies the opacity/transparency of an element
+
+     -->
+     <div class="clearfix">
+    <img class="float-right"
+    src="niraj.jpg" alt="Niraj.pic" height="170px" width="180px">
+    <h1 class="decoration">NIRAJ VINOD WALKE</h1>
+    <h3><i>Email Id&colon; <a class="color" href="nirajwalke132@gmail.com">nirajwalke132@gmail.com</a> </i></h3>
+    <h3>Contact No.&colon; 9372849552</h3>
+</div>
+     <hr>
+     <div>
+     <h2 class="underline" > &#x0002A;Career Objectives&#x0002A; &colon;</h2>
+     <p class="bolder">To secure a responsible career opportunity where I can utilize my training and skills, while making a significant contribution to the success of the company.</p>
+    </div>
+    <br>
+    <div>
+        <h2 class="underline" > &#x0002A;Personal Details&#x0002A; &colon;</h2>
+    </div>   
+    <div class="arranged">
+       Name: Niraj Vinod Walke.<br>
+        Father's Name: Vinod Ramaji Walke. <br>
+        Mother's Name: Seema Vinod Walke. <br>
+        Date Of Birth : 13th Feb 1996. <br>
+        Gender :-Male. <br>
+       Marital Status : Unmarried. <br> 
+       Nationality : Indian. <br>
+       Language Known : ,English, Hindi, Marathi.
+    </div>
+      <div>
+        <h2 class="underline" > &#x0002A;Educational Qualification&#x0002A; &colon;</h2>
+      </div>
+      <div>
+        <table class="Table"
+         border="1" cellpadding="30px">
+            <tr>
+                <th class="bold"> Name of <br> 
+                       Exam  </th>
+                <th  class="bold"> Institute <br>
+                Name    </th>
+                <th  class="bold"> Board/University   </th>
+                <th  class="bold">  Year of Passing </th>
+                <th  class="bold">Percentage</th>
+                  
+            </tr>
+            <tr> 
+                <td>S.S.C</td>
+                <td>Bhalerao Public School</td>
+                <td>Nagpur </td>
+                <td> March-2014 </td>
+                <td>81%</td>
+             </tr>
+            <tr>
+                <td>H.S.C</td> 
+                <td>Sri Chaitanya Ameenpur,Hyderabad</td>
+                <td> Telangana </td>
+                <td> May-2014</td>
+                <td>  93%</td>
+
+            </tr>
+            <tr>
+                <td>B.Tech</td> 
+                <td>Shri Guru Gobind Singhji Institute Of Engineering And Technology</td>
+                <td> S.R.T.M.U </td>
+                <td> May-2018</td>
+                <td>  56%</td>
+
+            </tr>
+           
+        </table>
+      </div>
+      <div>
+        <h2 class="underline" > &#x0002A;Technical skills&#x0002A; &colon;</h2> 
+        <ul >
+            <li class="font">Programming Languages - C/C++, Html5, Core Java, Python, SQL</li>
+            <li class="font"> Operating Systems - Windows (XP, Vista, 7, 8, 8.1,10), Linux (Ubuntu 9.04)</li>
+            <li class="font">Engineering Packages - Emulator 8086, Matlab, Oracle, Vmware, Netbeans, Eclipse</li>
+            <li class="font">Documentation - Microsoft office - Advance Excel, Word, PowerPoint, Outlook</li>
+        </ul>
+      </div>
+       <div>
+        <h2 class="underline" > &#x0002A;Academic Project&#x0002A; &colon;</h2> 
+        <p class="para">Final Year Project - MAY 2018 <br>
+            <ul>
+                <li class="thick">
+                    Title - “Employee Management Service Application”
+                </li>
+                <li class="thick">
+                    Description - The project was based on the Employee Management System. <br> We build an android application using Android Studio, Java, MySQL, etc for processing various features of Employee Management System. <br> Guide - Prof. P.G. Kolapwar(PROFESSOR,SGGSIE&T)
+                </li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="underline" > &#x0002A;Strengths&#x0002A; &colon;</h2> 
+            <ul class="thick">
+                <li>Leadership</li>
+                <li>Dedicated Work</li>
+                <li>Confident</li>
+                <li>Highly Organised</li>
+                <li>Team Work</li>
+                <li>Good Orator</li>
+                <li>Presentation Skills</li>
+            </ul>
+          </div>
+
+   <div>
+    <h2 class="underline" > &#x0002A;Declaration&#x0002A; &colon;</h2>
+       <p class="thick">
+        I hereby declare that, the particulars of information and facts stated herein the above are true and complete to the best of my knowledge and belief.
+       </p>
+       <p class="thick">Date:</p>
+       <p class="thick"> Place:</p>
+   </div>
+   <div class="move">
+       <p class="dash">  </p>
+       <p class="thick">(Niraj Vinod Walke)</p>
+   </div>
+</body>
+</html>

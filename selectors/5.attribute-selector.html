@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Description" content="Attribute-Selector">
+    <title>Attribute-Selector</title>
+    <style>
+        /*
+         htmltag[attributename]{
+         
+            property:value
+        } 
+        Affect the <p> tag has 'class' as the attribute
+         */
+
+
+
+
+         /* Affect the <p> tag that has attributename='color' and attributevalue='color-blue' */
+         /* p[class="para"]{
+             color: red;
+             font-weight: bold;
+         } */
+
+
+
+         /* p[class="color-blue"]{
+             color: blue;
+             font-weight: bold;
+         } */
+
+
+
+         /* p[class^="c"]{
+             color: blue;
+              font-weight: bold;} */
+             /* applies the property only when the attributename='color' and attributevalue starts with "color" */
+         
+         /* p[class*="green"]{
+             color: blue;} */
+         /* applies the property only when the attributename='class' and attributevalue should contain the word or character 'green'  */
+
+
+         p[class$="graph"]{
+             color: green;
+         }
+         /*applies the property only when the attributename='class' and attributevalue or word or character should ends with 'graph'  */
+    </style>
+</head>
+<body>
+    <p class="paragraph">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam quam aspernatur, illo officia, sunt adipisci possimus autem quidem repellat eos similique iste beatae doloribus non Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus nemo sed aut perferendis repellat at labore, dolores aspernatur alias saepe dicta necessitatibus facere voluptatem reiciendis amet aliquid debitis vero architecto! odio! Quo assumenda vero aliquam.</p>
+    <hr>
+    <p class="color-blue">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam quos expedita maxime voluptas ipsa iste accusamus vel quod? Corporis pariatur itaque, a blanditiis repudiandae maxime porro voluptatum deserunt autem adipisci.</p>
+    <hr>
+    <p class="color-green">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi illum quae velit, omnis nihil dolores cum maxime molestiae mollitia aut maiores eius consectetur quod ea accusantium saepe. Perferendis nobis numquam atque libero earum nemo perspiciatis eum et illo porro facere vel, ratione exercitationem tempora unde fuga placeat nulla at quibusdam.</p>
+    <hr>
+    <p class="color-red">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi nulla ad esse itaque, iure consequuntur labore, ex ullam unde eaque qui, dolorem perferendis veniam similique voluptatum tempora eos veritatis at neque quasi libero nihil est numquam? Voluptatibus eos cumque totam illum accusamus nobis sequi, nihil veniam, consequatur sint quo deleniti officia numquam necessitatibus! Sit, voluptatem.
+    </p>
+
+</body>
+</html>

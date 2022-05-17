@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>abc</title>
+    <style>
+        body{
+	font-family: Arial;
+	margin:0;
+	padding:20px;
+	background-color: #f1f1f1;
+}
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+header{
+    width: 100vw;
+    height: 100px;
+    border-bottom: solid 1px rgba(16, 16, 16, 0.1);
+    font-family: 'Poppins';
+   
+}
+
+header .inner{
+    width: 1300px; /* This is the inner width of the content inside of your header (80%, etc) */
+    height: 100%;
+    display: block;
+    margin: 0 auto;
+    background-color: black;
+}
+
+header .logo{
+    display: table;
+    height: 100%;
+    float: left;
+    background-color: black;
+}
+
+header .logo div{
+    height: 100%;
+    display: table-cell;
+    vertical-align: middle;
+    background-color: black;
+}
+
+header .logo img{
+    height: 50px;
+    margin-top: 5px; /* Optical alignment of the logo */
+}
+
+header nav{
+    float: right;
+    height: 100%;
+
+}
+
+header nav li{
+    display: table;
+    height: 100%;
+    float: left;
+    margin-right: 30px;
+    
+}
+
+header nav li:last-of-type{
+    margin-right: 0;
+}
+
+header nav span {
+    display: table-cell;
+    vertical-align: middle;
+
+}
+
+header nav a{
+    color: white
+}
+
+header nav .button{
+    background-color: #1ab26b; /* This HEX is the color of the button */
+    color: #FFF;
+    padding: 10px 20px;
+    border-radius: 4px;
+}
+
+header nav .button:hover{
+    filter: brightness(1.05);
+}
+*{
+	box-sizing: border-box;
+}
+.row:after{
+	content: '';
+	display: table;
+	clear: both;
+}
+header{
+	background-color: #ffffff;
+	padding:30px;
+}
+header h1{
+	text-align: center;
+	font-size:60px;
+	color:#000000;
+	margin:1.5 0px;
+    font-style: italic;
+}
+
+h2{
+	color:#000000;
+margin:1.5 0px;	
+}
+.left-column{
+float: left;
+width: 75%;	
+}
+
+/* .right-column{
+ width: 25%;
+ float: right;
+ padding-left:20px;
+ 
+}
+.card{
+	padding: 20px;
+	background-color: #ffffff;
+ margin-top:20px;
+} */
+
+/* .card img{
+	width: 100%;
+} */
+
+
+/* .right-column .card img{
+	margin-bottom: 10px;
+} */
+
+
+footer{
+	background-color: #dddddd;
+	padding: 20px;
+	text-align: center;
+	margin-top: 20px;
+}
+button{
+    font-family: sans-serif;
+    letter-spacing: 2px;
+    background-color: #25252A;
+    color: aqua;
+}
+
+/*responsive */
+
+@media(max-width:800px){
+	.left-column,.right-column{
+    width: 100%;
+    padding: 0px;
+	}
+}
+.text{
+    font-family: Arial, Helvetica, sans-serif;
+           font-size: 12px;
+           font-weight: bold;
+           line-height: 1cm;
+           letter-spacing: 0mm;
+           word-spacing: 2mm;
+           text-align: justify;
+           font-style: italic;
+           text-transform:uppercase;
+           text-decoration: underline;
+           text-indent: 300px;
+           text-shadow: 5px 5px 5px violet;
+
+}
+body{
+	line-height: 1.5;
+	font-family: 'Poppins', sans-serif;
+}
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+.container{
+	max-width: 1170px;
+	margin:auto;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+.footer{
+	background-color: #24262b;
+    padding: 70px 0;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #e91e63;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
+image{
+    opacity: 0.8;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <div class="inner">
+            <div class="logo">
+                <div>
+                    <!-- The below line can be an image or a h1, either will work -->
+                    <img src="/logo.png" alt="Google logo">
+                    <!-- <h1>My Logo</h1> -->
+                </div>
+            </div>
+
+            <nav>
+                <!-- Each of the below lines look complicated. There is a reason for this markup though!
+                <li> tag will be the container for the table.
+                <span> will be the part that centers the content inside it
+                <a> is the actual clickable part -->
+                <li><span><a href="">About</a></span></li>
+                <li><span><a href="">Work</a></span></li>
+                <li><span><a href="">History</a></span></li>
+                <li><span><a href="" class="button">Contact</a></span></li>
+                <!-- On the line above, remove the class="button" if you don't want the final
+                element to be a button -->
+            </nav>
+        </div>
+    </header>
+    <!-- End of the header --> 
+    <!-- <header>
+        <h1>Top 10 Most Famous Enterpreneurs Of Modern Age.</h1>
+
+    </header> -->
+    <main>
+    <div>
+        <h2>An entrepreneur is someone who jumps off a cliff and builds a plane on the way down.</h2>
+    </div>
+    <div class="row">
+        <div class="left-column">
+          <div class="card">
+            <h2>1.Jeff Bezos</h2>
+            <h5>Title description, Oct 8, 2021</h5>
+            <img src="/who-is-Jeff-Bezos.png" alt="blog "/>
+            <p> <strong>Description..</strong></p>
+            <p class="text">Who is Jeff Bezos?
+
+                Jeff Bezos (full name is Jeffrey Preston Bezos) is an American entrepreneur, world’s richest investor and also a philanthropist who graduated from Princeton University.
+                
+                On July 5, 1994, Jeff opened Amazon.com, named after the meandering South American river where he initially sold books across the US and in 45 foreign countries within 30 days. Later, he also started delivering CDs, videos, clothes, electronics, toys and more.
+                
+                Now Amazon is the leading e-retailer in the United States with close to 280 billion U.S. dollars in net sales recently, that’s a whopping amount, right?
+                
+                Even in developing countries like India, Amazon is performing really well and competing with eCommerce giants like Flipkart (even dominating in few areas).
+                
+                Here’s the famous quote by Jeff Bezos.
+                
+                A brand for a company is like a reputation for a person. You earn reputation by trying to do hard things well. ― Jeff Bezos
+                
+                Read: What Is Personal Branding With Personal Brand Examples In 2021
+                
+                What can you learn from Jeff Bezos?
+                
+                Start small, grow big: If there’s ONLY one lesson you can learn from the founder of Amazon i.e Jeff Bezos, it is this: start small, grow BIG.
+                
+                He initially sold books through Amazon.com (which was available only for US audience). Within 30 days after launching Amazon, it was doing $20,000 per week in sales. Then, he started selling other things too including CDs, toys, gadgets, clothes and so on.
+                
+                It literally became the “bookstore” to “everything store” in no time. If you’re just getting started, instead of going for too many things, focus on one thing. Start small, be consistent and grow big. That’s what you can learn from the world’s richest person: Jeff Bezos.
+                
+                Here’s the startup advice from Jeff Bezos.
+                
+                “If you decide that you’re going to do only the things you know are going to work, you’re going to leave a lot of opportunity on the table. Companies are rarely criticized for the things that they failed to try. But they are, many times, criticized for things they tried and failed at.” </p>
+          <button class="button"> Update </button> <button class="button">Delete</button>
+        </div>
+          <div class="card">
+            <h2>2.Bill Gates</h2>
+            <h5>Title description, Oct 8, 2021</h5>
+            <img src="/who-is-bill-gates.png" alt="blog "/>
+            <p><strong>Description..</strong></p>
+            <p class="text">William Henry Gates (popularly known as Bill Gates) is an American business magnate, investor, author and philanthropist. He is the founder of Microsoft foundation which he launched along with Paul Allen in 1975.
+
+                Who is Bill Gates?
+                
+                Bill Gates is one of the world’s richest persons, from 1995 to 2017, Bill Gates held the Forbes title of the richest person in the world all but 4 of those years. He also is known for his philanthropist activities such as Melinda Foundation and his current net worth is over $120 billion dollars.
+                
+                Here’s the famous quote by Bill Gates.
+                
+                If you can’t make it good, at least make it look good. ― Bill Gates
+                
+                What can you learn from Bill Gates?
+                
+                Be your own boss and start early: One of the primary reasons Bill Gates had huge success because he started early. Whether you know it or not, he was only 13 years old when he started working with computers.
+                
+                Yes, he had that passion towards computers at the early age and that’s what helped him to achieve massive success in the later years to start Microsoft.
+                
+                Bill Gates became his own boss (although he partnered up with dozens of people including Paul Allen) at the early age. He didn’t waste any time working for others, so if you want to be like Bill Gates, start early and work on your own dreams.</p>
+          </div>
+          <div class="card">
+            <h2>3. Mark Zuckerberg</h2>
+            <h5>Title description, Oct 8, 2021</h5>
+            <img src="/who-is-mark-zuckerberg.png" alt="blog "/>
+            <p><strong>Description..</strong></p>
+            <p class="text">There are very few people who are not aware of Mark Zuckerberg as he’s the founder of widely popular social media platform Facebook.
+
+                Who is Mark Zuckerberg?
+                
+                Mark Elliot Zuckerberg is an American technology entrepreneur and philanthropist who studied at Harvard University and he is one of the richest persons on the planet right now who has an estimate net worth of over $101 billion dollars.
+                
+                He’s the ONLY person under 50 in the Forbes ten richest people list and also the only one under 40 in the “Top 20 Billionaires” list. His social networking company Facebook has over 2.7 billion active users monthly!
+                
+                Facebook is undoubtedly the #1 social media platform used by everyone including students to marketers to leaders from all over the world.
+                
+                Here’s the famous quote by Mark Zuckerberg.
+                
+                The biggest risk is not taking any risk… in a world that is changing really quickly, the only strategy that is guaranteed to fail is not taking risks.
+                
+                What can you learn from Mark Zuckerberg?
+                
+                Don’t chase money: Mark Zuckerberg never seemed to acquire wealth. Here’s what he said once: “My goal was never to just create a company. A lot of people misinterpret that as if I don’t care about revenue or profit or any of those things. But what not being ‘just’ a company means to me is building something that actually makes a really big change in the world.”
+                
+                So what does it mean? Money comes as a by-product. Don’t chase money, instead, focus on creating an amazing product (or service) that improves the lives of others. Then, you’ll eventually make money just like Mark Zuckerberg.
+                 </p>
+                 <button class="button"> Update </button> <button class="button">Delete</button>
+
+        </div>
+        <div class="card">
+            <h2>4. Larry Page And Sergey Brin</h2>
+            <h5>Title description, Oct 8, 2021</h5>
+            <img src="/who-is-larry-page.png" alt="blog "/>
+            <p><strong>Description..</strong></p>
+            <p class="text"> Lawrence Edward Page (commonly known Larry Page) is an American entrepreneur who co-founded Google with Sergey Brin.
+
+                Sergey Mikhaylovich Brin (popularly known as Sergey Brin) is also an American entrepreneur and investor who’s partnered up with Larry Page to launch Google which was founded back in 1997 September 15th.
+                
+                Who are Larry Page And Sergey Brin?
+                
+                Larry Page is currently the CEO of Alphabet (which is a Google’s parent company) and he has a net worth of over $78 billion dollars.
+                
+                Sergey Brin is currently the President of Alphabet who has a net worth of over $75.9 billion dollars.
+                
+                Both Larry Page and Sergey Brin had received the prestigious award Marconi Prize in 2004
+                
+                Here are the famous quotes by Larry Page And Sergey Brin.
+                
+                We do lots of Stuff. The only way you are going to have success is to have lots of failures first. — Sergey Brin
+                
+                Always deliver more than expected. ― Larry Page
+                
+                What can you learn from Larry Page And Sergey Brin?
+                
+                Invention and marketing are the keys to success: Here’s what Larry Page once said “Invention is not enough. [Nikola] Tesla invented the electric power we use, but he struggled to get it out to people. You have to combine both things: invention and innovation focus, plus the company that can commercialize things and gets them to people.”
+                
+                What can you understand from it?
+                
+                Google has succeeded because of two reasons: it satisfied the searchers wants (by giving the best possible results) and it also became the synonym for most people for the word “search”. If you want to succeed as an entrepreneur, find ways to market your products so they reach to wider audience.
+                
+                Just inventing new things is not going to help you in this crowded market place as you’ve to go out and market yourself to bring more exposure and customers to your products (or services).</p>
+                <button class="button"> Update </button> <button class="button">Delete</button>
+        </div>
+        <div class="card">
+            <h2>5. Richard Branson</h2>
+            <h5>Title description, Oct 8, 2021</h5>
+            <img src="/who-is-richard-branson.png" alt="blog "/>
+            <p><strong>Description..</strong></p>
+            <p class="text">
+                Sir Richard Charles Nicholas Branson (popularly known as Richard Branson) is best known as the founder of Virgin group which comprises of more than 400 companies worldwide.
+
+Who is Richard Branson?
+
+Richard Branson holds the Virgin group and ranks 8th among wealthiest British billionaires by net worth. He’s also the first and only person to cross the Atlantic in the largest hot air balloon. He, later on, broke his own record by crossing pacific in a Virgin hot air balloon.
+
+Looking for the famous entrepreneurs quotes?
+
+Here’s the famous quote by Richard Branson.
+
+Business opportunities are like buses, there’s always another one coming.
+
+What can you learn from Richard Branson?
+
+Enjoy what you do: Richard Branson enjoys his work and he parties hard. Whether you know it or not, he owns 2 private islands, one he rents out and the other island which is known as nectar island where he parties along with the celebrities including Mariah Carey, Kate Winslet, Oprah, David Beckham and so on.
+
+He’s known for taking risks and he really enjoys what he does. Here’s the business advice from Branson.
+
+“Entrepreneurship is not about getting over customers. It’s not about working on your own. It’s not about looking out for number one. It’s not necessarily about making a lot of money. On the contrary, it’s about turning what excites you in life into capital, so that you can do more of it and move forward.” </p>
+<button class="button"> Update </button> <button class="button">Delete</button>
+            </div>
+        
+            <div class="card">
+                <h2>6. Steve Jobs</h2>
+                <h5>Title description, Oct 8, 2021</h5>
+                <img src="/who-is-steve-jobs.png" alt="blog "/>
+                <p><strong>Description..</strong></p>
+                <p class="text"> 
+                    Steven Paul Jobs (popularly known as Steve Jobs) was an American entrepreneur and investor. If you’re using smartphones especially an iPhone, you probably know who Steve Jobs is!
+
+Who is Steve Jobs?
+
+Steve Jobs was the chairman, CEO and co-founder of Apple Inc which is now worth over $2 trillion dollars (yes you heard it right) and it’s also considered as one of the Big Four of technology along with Amazon, Google, and Facebook.
+
+Steve Jobs was also the chairman and majority shareholder of Pixar, which is an American computer animation film studio founded in 1986.
+
+Here’s the famous quote by Steve Jobs.
+
+Your time is limited, so don’t waste it living someone else’s life. Don’t be trapped by dogma – which is living with the results of other people’s thinking. Don’t let the noise of other’s opinions drown out your own inner voice. And most important, have the courage to follow your heart and intuition. They somehow already know what you truly want to become. Everything else is secondary. – Steve Jobs
+
+What can you learn from Steve Jobs?
+
+Put a dent in the universe: Here’s what Steve Jobs meant when he said: “put a dent in the universe”. The “dent” is leaving your own mark and impacting the lives of the people in our universe, even if that change may be as small as just a “dent”.
+
+Steve Jobs is known for his creativity and he literally changed the future of how we use our smartphones. Not only he came up with the ideas of iPhone, iPad and so on but he crafted them so beautifully that everyone wants to like them.
+                </p>
+                <button class="button"> Update </button> <button class="button">Delete</button>
+ </div>
+ <div class="card">
+    <h2>7. Larry Ellison</h2>
+    <h5>Title description, Oct 8, 2021</h5>
+    <img src="/who-is-larry-ellison.png" alt="blog "/>
+    <p><strong>Description..</strong></p>
+    <p class="text">Lawrence Joseph Ellison (commonly known as Larry Ellison) is an American entrepreneur who is the co-founder of Oracle Corporation.
+
+        Who is Larry Ellison?
+        
+        If you’re into technology or software, you must have heard about Oracle and Larry Ellison is the one who co-founded it along with Bob Miner, Ed Oates in 1977.
+        
+        Here’s the famous quote by Larry Ellison.
+        
+        If you do everything that everyone else does in business, you’re going to lose. The only way to really be ahead is to ‘be different’.
+        
+        What can you learn from Larry Ellison?
+        
+        Have a clear vision: One of the key factors that differentiate a leader from others is this: they all have a clear vision. A successful leader is one who is always thinking about the future, not just the present.
+        
+        Larry Ellison had a clear vision and that’s the reason why Oracle is still one of the leading software companies which were actually started way back in 1977. Today the company does 40+ billion dollars in annual sales and has a market cap of over 182 billion dollars. Yes, you heard it right.
+        
+        So if you’re going to launch a startup or company, make sure to think about the next generation and have plans for it. </p>
+        <button class="button"> Update </button> <button class="button">Delete</button>
+        </div>
+        <div class="card">
+            <h2>8. Ritesh Agarwal</h2>
+            <h5>Title description, Oct 8, 2021</h5>
+            <img class="image"
+            src="/who-is-ritesh-agarwal.png" alt="blog "/>
+            <p><strong>Description..</strong></p>
+            <p class="text"> 
+                Have you ever heard of Oyo Rooms? If you’re an Indian who especially loves to travel might have already stayed at Oyo Rooms at least for once. Oyo Rooms was founded by Ritesh Agarwal.
+
+Who is Ritesh Agarwal?
+
+Ritesh Agarwal is the founder of OYO Rooms which is India’s largest hospitality company that mostly offers budget friendly accommodation with all kinds of neatness and safety features and it was founded in 2013.
+
+Here’s the famous quote by Ritesh Agarwal.
+
+Start small, nail it and then make it big.
+
+What can you learn from Ritesh Agarwal?
+
+Find the RIGHT mentor: Ritesh Agarwal from Oyo rooms had shortlisted for “The Thiel Fellowship” (he was amongst the top 1% of the candidates that applied) which is a 2 year program wherein fellows receive $100,000 and mentorship.
+
+Not only that, all the candidates who had been selected for Thiel’s fellowship had access to learn from the foundation’s network investors including Mark Zuckerberg, Larry Page, Elon Musk, Peter Thiel and so on.
+
+This mentorship program along with the fund had helped Ritesh so much so that he launched Oyo rooms which is now revolutionized the hotel industry in India! So look for the RIGHT mentors, implement what you learn and do it better – that’s how you can achieve success like Ritesh Agarwal.
+            </p>
+            <button class="button"> Update </button> <button class="button">Delete</button>
+        </div>
+        <div class="card">
+            <h2>9. Vijay Shekhar Sharma</h2>
+            <h5>Title description, Oct 8, 2021</h5>
+            <img src="/who-is-vijay-shekhar-sharma.png" alt="blog "/>
+            <p><strong>Description..</strong></p>
+            <p class="text"> Have you heard about PayTm? If you’re an Indian, chances are you’ll be mostly using it and if you’re not, just Googling the word “PayTm” tells you how popular it is in India. PayTm (Pay Through Mobile) is India’s biggest eCommerce payment system which also offers digital wallet which was founded by Vijay Shekhar Sharma.
+
+                Who is Vijay Shekhar Sharma?
+                
+                Although the Paytm Payments Bank (which literally revolutionized the payment industry) is a separate entity in which founder Vijay Shekhar Sharma will hold 51% share, One97 Communications holds 39% and 10% will be held by a subsidiary of One97 and Vijay.
+                
+                Here’s the famous quote by Vijay Shekhar Sharma.
+                
+                If you’re not the customer, don’t build it – Vijay Shekhar
+                
+                What can you learn from Vijay Shekhar Sharma?
+                
+                Look for the opportunities: If you want to be successful, you don’t have to reinvent the wheel, sometimes you just need to look for the opportunities and do better than anyone else. That’s what Vijay did with PayTm.
+                
+                Before the success of PayTm, there were other great alternatives like FreeCharge for mobile payments and recharges in India but the reason why PayTm succeeded, in the long run, is because it took the right steps at the right time (such as after “demonetization in India”, almost everyone started using PayTm including tea vendors).
+                
+                So the key here is most successful entrepreneurs either create completely new and innovative products or they improve on the products of others. It’s as simple as that!</p>
+                <button class="button"> Update </button> <button class="button">Delete</button>
+        </div>
+        <div class="card">
+            <h2>10. Elon Musk</h2>
+            <h5>Title description, Oct 8, 2021</h5>
+            <img src="/who-is-elon-musk.png" alt="blog "/>
+            <p><strong>Description..</strong></p>
+            <p class="text"> How can we curate the list without including the REAL Iron Man Elon Musk himself? Elon Reeve Musk is a technology entrepreneur and also an engineer who holds multiple citizenships including South Africa, Canada and U.S. and famously known for SpaceX.
+
+                Who is Elon Musk?
+                
+                Elon Musk is an all-rounder entrepreneur who was the co-founder of the famous online payment system PayPal. He is currently the founder, CEO, and lead designer of SpaceX, co-founder, CEO, and product architect of Tesla, founder of The Boring Company.
+                
+                Here’s the famous quote by Elon Musk.
+                
+                When something is important enough, you do it even if the odds are not in your favor – Elon Musk
+                
+                What can you learn from Elon Musk?
+                
+                Take risks: Elon Musk is someone who’s famous for taking risks.
+                
+                What would you do if you had around $200 million by selling a company? Most of us would think that we’re settled in life, buy a big mansion including expensive cars, travel around the world, sit back and relax for the rest of our lives, right?
+                
+                Here’s where the Elon Musk stands out from the crowd by taking risks. There’s one quote that sums it up all when Elon said “My proceeds from the PayPal acquisition were $180 million. I put $100 million in SpaceX, $70m in Tesla, and $10m in Solar City. I had to borrow money for rent.”
+                
+                If you want to be like Elon Musk, don’t afraid to take risks. Even if the odds are not in your favour, if something is worth pursuing, do it instead of thinking about failures.
+                
+                Here’s one bit of advice from Elon Musk about entrepreneurship: “It is important to view knowledge as sort of a semantic tree: make sure you understand the fundamental principles – the trunk and big branches – before you get into the leaves/details, or there is nothing for them to hang on to.”</p>
+                
+        </div>
+        </div>
+    </main>
+   
+     
+    <!-- <div class="right-column">
+        <div class="card">
+             <h2>About Me</h2>
+             <img src="img/about-me.jpg" alt="me"/>
+             <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+        </div>
+        <div class="card">
+             <h3>Popular Post</h3>
+             <img src="img/popular-blog1.jpg" alt="popular"/>
+             <img src="img/popular-blog2.jpg" alt="popular"/>
+             <img src="img/popular-blog3.jpg" alt="popular"/>
+        </div>
+        <div class="card">
+            <h3>Follow Me</h3>
+            <p>Some Text...</p>
+        </div> -->
+    </div>
+</div>
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col">
+                <h4>company</h4>
+                <ul>
+                    <li><a href="#">about us</a></li>
+                    <li><a href="#">our services</a></li>
+                    <li><a href="#">privacy policy</a></li>
+                    <li><a href="#">affiliate program</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>get help</h4>
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">shipping</a></li>
+                    <li><a href="#">returns</a></li>
+                    <li><a href="#">order status</a></li>
+                    <li><a href="#">payment options</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>online shop</h4>
+                <ul>
+                    <li><a href="#">watch</a></li>
+                    <li><a href="#">bag</a></li>
+                    <li><a href="#">shoes</a></li>
+                    <li><a href="#">dress</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>follow us</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+  
+   
+</body>
+</html>

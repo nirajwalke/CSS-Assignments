@@ -1,0 +1,30 @@
+  /*
+
+         CSS is the language for describing the presentation of Web pages, including colors, layout, and fonts. css we used to apply style to your page. we need to write the css inside <style>.
+         this is the another type of comment we uses in css inside the style
+      selector{
+        property-1; value-1;
+        property-2:value-2;
+        property-3:value-3;
+              .
+              .
+              .
+         property-n; value-n;
+         h1 is a selctor,property = color, value= red
+                         property = font-size, value=50px
+         
+         p is a selctor,property = color, value= red
+                        property = font-size, value=30px
+      }
+     
+
+
+       */
+h1 {
+    color:red;
+    font-size: 55px;
+ }
+ p {
+    color:red;
+    font-size: 35px;
+ }

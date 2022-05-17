@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Description" content="Introduction-Grid">
+    <title>Introduction-Grid</title>
+    <style>
+      html,body{
+          padding: 0;
+          margin: 0;
+      }
+      body{
+          font-family: Georgia, 'Times New Roman', Times, serif;
+          font-size: 1rem;
+      }
+      .parent{
+          padding: 20px;  
+          display:grid;
+          grid-template-columns: 1fr 1fr 1fr; /*33% 33% 33% ;*/
+          gap: 20px;
+      }
+      .item{
+          background-color: rgb(228, 228, 228);
+          padding: 20px;
+          border-radius: 20px;
+          font-size: 0.9rem;
+          line-height: 1.7;
+          text-align: justify;
+      }
+      .item p{
+          margin: 0;
+      }
+      .item:nth-child(1){
+          font-size: 1.1rem;
+            grid-row: span 2;
+            display: grid;
+            align-content: center;
+      }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="item">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet id, iusto culpa fuga obcaecati, debitis error laboriosam necessitatibus inventore atque eius facere voluptatem harum maxime suscipit esse dolor. Dolore, Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus consequuntur quibusdam veniam laudantium sed maxime error architecto voluptas cum! Iure eligendi nisi vero architecto libero itaque velit a exercitationem. Magni. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores nihil nisi possimus libero minus. Aliquid, magni. Distinctio, pariatur repudiandae? Dicta ex unde distinctio odit quo deserunt magnam reiciendis perferendis reprehenderit.  aliquam.</p>
+        </div>
+        <div class="item">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet id, iusto culpa fuga obcaecati, debitis error laboriosam necessitatibus inventore atque eius facere voluptatem harum maxime suscipit esse dolor. Dolore, Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus consequuntur quibusdam veniam laudantium sed maxime error architecto voluptas cum! Iure eligendi nisi vero architecto libero itaque velit a exercitationem. Magni. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores nihil nisi possimus libero minus. Aliquid, magni. Distinctio, pariatur repudiandae? Dicta ex unde distinctio odit quo deserunt magnam reiciendis perferendis reprehenderit.  aliquam.</p>
+        </div>
+        <div class="item">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet id, iusto culpa fuga obcaecati, debitis error laboriosam necessitatibus inventore atque eius facere voluptatem harum maxime suscipit esse dolor. Dolore, Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus consequuntur quibusdam veniam laudantium sed maxime error architecto voluptas cum! Iure eligendi nisi vero architecto libero itaque velit a exercitationem. Magni. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores nihil nisi possimus libero minus. Aliquid, magni. Distinctio, pariatur repudiandae? Dicta ex unde distinctio odit quo deserunt magnam reiciendis perferendis reprehenderit.  aliquam.</p>
+        </div>
+        <div class="item">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet id, iusto culpa fuga obcaecati, debitis error laboriosam necessitatibus inventore atque eius facere voluptatem harum maxime suscipit esse dolor. Dolore, Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus consequuntur quibusdam veniam laudantium sed maxime error architecto voluptas cum! Iure eligendi nisi vero architecto libero itaque velit a exercitationem. Magni. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores nihil nisi possimus libero minus. Aliquid, magni. Distinctio, pariatur repudiandae? Dicta ex unde distinctio odit quo deserunt magnam reiciendis perferendis reprehenderit.  aliquam.</p>
+        </div>
+        <div class="item">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet id, iusto culpa fuga obcaecati, debitis error laboriosam necessitatibus inventore atque eius facere voluptatem harum maxime suscipit esse dolor. Dolore, Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus consequuntur quibusdam veniam laudantium sed maxime error architecto voluptas cum! Iure eligendi nisi vero architecto libero itaque velit a exercitationem. Magni. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores nihil nisi possimus libero minus. Aliquid, magni. Distinctio, pariatur repudiandae? Dicta ex unde distinctio odit quo deserunt magnam reiciendis perferendis reprehenderit.  aliquam.</p>
+        </div>
+        <div class="item">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet id, iusto culpa fuga obcaecati, debitis error laboriosam necessitatibus inventore atque eius facere voluptatem harum maxime suscipit esse dolor. Dolore, Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus consequuntur quibusdam veniam laudantium sed maxime error architecto voluptas cum! Iure eligendi nisi vero architecto libero itaque velit a exercitationem. Magni. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores nihil nisi possimus libero minus. Aliquid, magni. Distinctio, pariatur repudiandae? Dicta ex unde distinctio odit quo deserunt magnam reiciendis perferendis reprehenderit.  aliquam.</p>
+        </div>
+        
+    </div>
+</body>
+</html>

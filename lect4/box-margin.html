@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Description" content="Box-Margin">
+    <title>Box-Margin</title>
+    <style>
+        /* margin:can be used to add the spaces the elements/boxes around 
+             margin properties:
+             margin-top;
+             margin-bottom
+             margin-left
+             margin-right
+
+            Different methods of definning the margin properties
+            clockwise order
+            h1{
+            margin-top
+            margin-right
+            margin-bottom
+            margin-left 
+          }
+          OR
+          h1{
+              margin:5px; All the four sides will take the mrgin size of 5 px
+          }
+          OR
+          h1{
+              margin: 1px 2px 3px 1px
+              top right bottom left
+          }
+          OR
+          h1{
+              margin:1px 2px 3px
+              margin: top left+right bottom
+          }
+             
+             
+             
+             */
+             div{
+                 margin-bottom: 10px;
+             }
+       
+             .red-border{
+                 border: 5px solid red;
+             }
+             .blue-border{
+               border: 5px solid blue;  
+             }
+             .green-border{
+                 border: 5px solid green;
+             }
+    </style>
+</head>
+<body>
+    <div class="red-border">
+    >Example 1 margin and solid red line.
+    </div>
+
+    <div class="red-border" style="border-style:dashed;">
+        Example 2 margin with red border and dashed red line.
+    </div>
+
+    <div class="red-border" style="border-style: dotted;">
+    >Example 3 margin with red border and dotted red line. 
+    </div>
+
+    <div class="blue-border">
+        Example 4 margin and solid blue line.
+    </div>
+
+    <div class="blue-border" style="border-style: dashed;">
+        Example 5 with red border and dashed blue line.
+    </div>
+
+    <div class="blue-border" style="border-style: dotted;">
+        Example 6 with red border and dotted blue line.
+    </div>
+
+    <div class="green-border">
+        Example 7 with margin and solid green line.
+    </div>
+
+    <div class="green-border" style="border-style: dashed;">
+        Example 8 with red border and dashed green line.
+    </div>
+
+    <div class="green-border" style="border-style: dotted;">
+        Example 9 with red border and dotted blue line.
+    </div>
+</body>
+</html>

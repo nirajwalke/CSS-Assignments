@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Description" content="Adjacent-Sibling-Selector">
+    <title>General-Adjacent-Sibling-Selector</title>
+    <style>
+        /* 
+        selector1 ~ selector2{
+            property:value;
+        }
+        <p> k baad wala <anchor> turns into red in color.
+        */
+         p~a{
+            color: red;
+        }
+
+    </style>
+</head>
+<body>
+   <p>
+       Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia dolores rem itaque cum, libero aliquam deleniti molestiae. Veniam sint commodi excepturi tempora dolore esse eum suscipit rerum nisi itaque! Adipisci. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint est eveniet vero ad animi repellat quas laudantium fugit dolore. Quidem delectus aspernatur culpa similique obcaecati, harum recusandae deleniti qui! Ullam!
+   </p>
+   <hr>
+   <a href="#">
+       <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam commodi laudantium ullam consectetur illo deserunt ratione enim non laboriosam iste a, placeat et explicabo quibusdam rerum assumenda corrupti? Nesciunt, quis!</p>
+   </a>
+   <hr>
+   <div>
+       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis, unde neque voluptatibus nesciunt pariatur nisi! Sapiente atque velit cumque distinctio itaque consequuntur! Possimus voluptatum, voluptate ad exercitationem quaerat eum obcaecati.</p>
+
+   </div>
+   <hr>
+   <div>
+       <a href="#">Some Dummy Content</a>
+       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto totam quibusdam voluptate blanditiis dolorem voluptates minima vero quos error deleniti, possimus deserunt animi odit amet suscipit nihil laudantium illo alias?</p>
+       <a href="#">Some Dummy Content</a>
+       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto totam quibusdam voluptate blanditiis dolorem voluptates minima vero quos error deleniti, possimus deserunt animi odit amet suscipit nihil laudantium illo alias?</p>
+       
+   </div>
+</body>
+</html>

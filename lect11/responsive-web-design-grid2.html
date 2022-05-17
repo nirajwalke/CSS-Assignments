@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Description" content="Responsive Web Design-Splitting Grid-2">
+    <title>Splitting-Grid-2</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+       row::after{
+           content:'';
+           clear: both;
+           display: table;
+       }
+      /* mobile phones */
+      [class*='col-']{
+         width: 100%;
+      }
+      @media only screen and (min-width:768px){
+          /* Applies for Desktop/Laptop */
+
+       /* Applying Grid for all the coluns */
+    
+       /* Grid col split up */
+       
+       .col-1{ width: 8.33%;}
+       .col-2{ width: 16.66%;}
+       .col-3{ width: 25%;}
+       .col-4{ width: 33.33%;}
+       .col-5{ width: 41.66%;}
+       .col-6{ width: 50%;}
+       .col-7{ width: 58.33%;}
+       .col-8{ width: 66.66%;}
+       .col-9{ width: 75%;}
+       .col-10{ width: 83.33%;}
+       .col-11{ width: 91.66%;}
+       .col-12{ width: 100%;}
+    }
+
+
+
+       .header{
+           background-color: steelblue;
+           color: white;
+           padding: 15px;      
+         }
+        .menu ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+       .menu ul li{
+           padding: 8px;
+           margin-bottom: 7px;
+           background-color: tomato;
+           color: white;
+           box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0px 1px 2px rgba(0,0,0,0.24);
+       }
+       
+
+        .footer{
+            clear: both;
+            padding: 15px;
+            border: 1px solid green;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>SKILLSAFARI</h1>
+    </div>
+   <div class="row">
+       <div class="col-3 menu">
+        <ul>
+            <li>Home</li>
+            <li>Alchemist Program</li>
+            <li>Virtual Internship</li>
+        </ul>
+       </div>
+       <div class="col-9 main">
+        <h1>Why we are Awesome?</h1>
+        <p>Lorem ipsum, dolor sit amet Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam, molestias exercitationem? Qui omnis dolores modi voluptatem quisquam dignissimos cum, illo quas voluptates tempora, deserunt voluptas excepturi eos consequatur natus? Consequatur? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident, asperiores amet officia, corrupti labore aliquam eligendi laudantium similique perspiciatis ab tempore sed cum quod fugiat hic quas, quaerat qui autem! consectetur adipisicing elit. Magni rerum consequatur dolores, dicta voluptatum libero reprehenderit excepturi accusamus possimus ratione sequi fugiat cumque doloremque nobis illum nulla beatae? Laudantium, quod?</p>
+    </div>
+   </div>
+    <div class="footer">
+     <p>Copyright(C)SkillSafari.in,2021</p>
+    </div>
+</body>
+</html>

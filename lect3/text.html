@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Description" content="CSS-Text Style properties">
+    <title>Text-Style-Properties</title>
+    <style>
+       p{
+           font-family: Arial, Helvetica, sans-serif;
+           font-size: 12px;
+           font-weight: bold;
+           line-height: 1cm;
+           letter-spacing: 0mm;
+           word-spacing: 2mm;
+           text-align: justify;
+           font-style: italic;
+           text-transform:uppercase;
+           text-decoration: underline;
+           text-indent: 300px;
+           text-shadow: 5px 5px 5px violet;
+
+        }
+        p::first-letter{
+            font-size: 50px;
+        }
+        p::first-line{
+            text-shadow: none;
+        }
+        span{
+            text-decoration: line-through;
+        }
+    </style>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur <span> adipisicing elit.</span> Perferendis consectetur, quae architecto earum culpa quas eveniet nostrum quisquam voluptatibus alias iste quis minus deserunt excepturi nihil voluptates fuga vel illum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur quidem asperiores numquam libero, eos commodi veritatis alias placeat, distinctio illum nobis deserunt est, accusamus in labore facere delectus enim? Doloremque?Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus ducimus adipisci magni, numquam nam tempora veritatis, unde, eius tempore quaerat officia debitis? Quod qui odit quos voluptatem, fugit aperiam rerum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque dignissimos magni, id ut optio quibusdam quod omnis repellat ratione iste. Rem aliquam earum iusto minima. Soluta necessitatibus quo ducimus adipisci.</p>
+</body>
+</html>

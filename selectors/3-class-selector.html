@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Description" content="Class-Selector">
+    <title>Class-Selector</title>
+    <style>
+        .green-border{
+           border:solid;
+           border-color: green; 
+        }
+        .red-border{
+            border: solid;
+            border-color: red;
+        }
+        .blue-border{
+            border: solid;
+            border-color: blue;
+        }
+        .text-italic{
+            font-style: italic;
+        }
+        /* combination of Type and Class selectors */
+        h1.green-border{
+            border-width: 10px;
+            border-radius: 25px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1 class="green-border text-italic">Class-Selector</h1>
+    <!-- we can define more than class in class selectors 
+    class selectors we define using  (.{}) -->
+    <p class="red-border">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde sit reiciendis perferendis mollitia exercitationem maiores, dolorem atque alias ut consequuntur quam eos, magnam deserunt harum, voluptates incidunt ullam corporis et! Minus eum, deleniti cum dolorum doloremque dicta ea nobis aliquam, nemo corrupti alias ipsum, nostrum quidem dolor error enim repellendus odit quo?</p>
+    <h2 class="blue-border">some paragraph text</h2>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Descriiption" content="CSS-Layout with left sidebar">
+    <title>CSS-Layout with left sidebar</title>
+    <style>
+     body{
+    width: 720px;
+    margin: 0 auto;
+    font: 10pt/1.5em 'georgia',Arial,sans-serif;
+     } 
+        header, footer{
+    padding: 0px;
+    text-align: center;
+      }
+      aside{
+          float: left;
+          width: 100px;
+          
+      }
+      section{
+          float: right;
+          width: 440px;
+      }
+      footer{
+          clear: both;
+          height: 100px;
+      }
+    </style>
+</head>
+<body>
+    <header>
+        <h1><u>Page Layout - 2</u></h1>
+    </header>
+    <hr>
+    <aside>
+        <figure>
+            <img src="./MERN.jpg" alt="mern-logo" width="200px" height="200px">
+            <figcaption>MERN-LOGO</figcaption>
+        </figure>
+        <div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </aside>
+
+<section>
+    <article>
+<header><h2><u>Article - 1</u></h2></header>
+<div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum repellendus alias id labore minima, culpa reiciendis incidunt quisquam excepturi odio vitae assumenda a cumque,Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi dignissimos ut, quo expedita totam dolorum quasi cumque earum ea officiis consequatur distinctio ratione nam possimus! Doloribus iusto provident optio eligendi! aperiam non eligendi expedita veniam. Odio.</p>
+
+</div>
+<p><i>#End of Article - 1</i></p>
+    </article>
+    <article>
+        <header><h2><u>Article - 2</u></h2></header>
+        <div>
+            <p>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti ducimus illo earum, facilis voluptatum nam recusandae in repellendus ex nesciunt minus a perferendis rem animi eligendi labore sint soluta dolor. consectetur adipisicing elit. Laboriosam corrupti eum dolorem ipsum nihil rerum veniam ipsam magnam et, sunt alias nostrum. Fugit omnis laborum praesentium rem quis nemo odit.</p>
+        </div>
+        <p><i>#End of Article - 2</i></p>
+    </article>
+</section>
+
+<footer>
+    <hr>
+   Copyright @ www.skilsafari.in ,2021.
+   
+</footer>
+</body>
+</html>

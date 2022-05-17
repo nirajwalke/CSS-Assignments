@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Description" content="CSS-layout with sidebar and Navbar">
+    <title>layout with sidebar and Navmenu</title>
+    <style>
+        body{
+            width: 720px;
+            margin: 0 auto;
+            font: 10pt/1.5em 'georgia',Arial,sans-serif;
+        }
+        header,footer{
+            padding: 0px;
+            text-align: center;
+        }
+        aside{
+            float: left;
+            width: 150px;
+        }
+        nav{
+            text-align: center;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin-bottom: 0;
+        }
+        nav ul li{
+            display: inline-block;
+            margin: 0 0 0 50px;
+            width: 100px;
+            
+        }
+        nav ul li a{
+            text-decoration: none;
+            
+        }
+        section{
+            float: right;
+            width: 500px;
+            padding-left: 20px;
+            border-left: 2px dotted #b2a497;
+        }
+        footer{
+            clear: both;
+           height: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1><u>Page Layout - 3</u></h1>
+    </header>
+<hr>
+<nav>
+     <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Blog</a></li>
+    <li><a href="#">Contact</a></li>
+</ul>
+</nav>
+<hr>
+<aside>
+    <figure>
+        <img src="./MERN.jpg" alt="mern-logo" width="100px" height="100px">
+        <figcaption>MERN-LOGO</figcaption>
+    </figure>
+    <div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+</aside>
+<section>
+    <article>
+<header><h2><u>Article - 1</u></h2></header>
+<div>
+    <p>Lorem ipsum dolor sit Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore, unde sed, laboriosam autem doloribus architecto possimus atque ab minus deleniti dolorum pariatur, minima maxime sequi! Explicabo fugit et voluptas debitis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque error voluptas ducimus ipsam fugit eius placeat atque laborum est? At, cupiditate delectus nam reiciendis molestiae blanditiis temporibus beatae possimus? Reprehenderit. amet expedita totam dolorum quasi cumque earum ea officiis consequatur distinctio ratione nam possimus! Doloribus iusto provident optio eligendi! aperiam non eligendi expedita veniam. Odio.</p>
+
+</div>
+<p><i>#End of Article - 1</i></p>
+    </article>
+    <article>
+        <header><h2><u>Article - 2</u></h2></header>
+        <div>
+            <p>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti ducimus illo earum, facilis voluptatum nam recusandae in repellendus ex nesciunt minus a perferendis rem animi eligendi labore sint soluta dolor. consectetur adipisicing elit. Laboriosam corrupti eum dolorem ipsum nihil rerum veniam ipsam magnam et, sunt alias nostrum. Fugit omnis laborum praesentium Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis laboriosam doloribus suscipit eius earum aperiam, possimus illum veritatis. Placeat, alias distinctio quae iure sunt minus error numquam voluptatum cum accusamus!Lorem rem quis nemo odit.</p>
+        </div>
+        <p><i>#End of Article - 2</i></p>
+    </article>
+</section>
+<footer>
+    <hr>
+    Copyright @ www.skilsafari.in ,2021.
+</footer>
+</body>
+</html>

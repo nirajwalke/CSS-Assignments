@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Description" content="Display-Inline">
+    <title>Display-Inline</title>
+    <style>
+        /* display: inline| block| inline-block
+           display:inline; will arrange all the elements side by side.
+                           we can't apply height and width property to diplay:inline;
+        display:inline-block;  used to change the height and width of the element and stills
+        remains in inline.
+
+        */
+   span{
+       width: 200px;
+       height: 200px;
+       background-color: brown;
+       margin-left: 2px;
+       display: inline-block;
+   }
+   div{
+       height: 150px;
+       width: 150px;
+       margin-bottom: 10px;
+       background-color: teal;
+       /* display: inline; */
+       display: block;
+       /* margin-left: 40px; */
+   }
+    </style>
+</head>
+<body>
+   <span>Span - 1</span> 
+   <span>Span - 2</span> 
+   <span>Span - 3</span> 
+   <span>Span - 4</span> 
+
+   <div>Div - 1</div>
+   <div>Div - 2</div>
+   <div>Div - 3</div>
+   <div>Div - 4</div>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Description" content="clearfix-demo">
+    <title>ClearFix-Demo</title>
+    <style>
+    p{
+        font-family:Georgia, 'Times New Roman', Times, serif;
+        font-size: 40px;
+        font-weight: bold;
+        color:green;
+       
+    }
+      p::before{
+          content:'' ; 
+          display: block;
+          color:blue;
+           background-color: red;  
+          width:450px;
+          height: 15px;
+           /* visibility: hidden; */
+    } 
+    p::after{
+          content:'' ; 
+          display: block;
+          color: rgb(121, 132, 165);
+          background-color: red;
+          width:450px;
+          height: 15px;
+           /* visibility: hiddens; */
+    }
+    </style>
+</head>
+<body>
+    <p class="clearfix">This is my Paragraph</p>
+</body>
+</html>

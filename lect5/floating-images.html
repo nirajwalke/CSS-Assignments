@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Description" content="CSS-Floating Images">
+    <title>Floating-Images</title>
+    <style>
+        h1{
+            text-align: center;
+            text-decoration: underline;
+        }
+        img{
+            margin-right: 20px;
+        }
+        .float-left{
+            float: left;
+        }
+        .clearfix::after{
+            content: "";
+            display: block;
+            /* clear: left; */
+            clear: left ;
+        }
+        .float-right{
+            float: right;
+        }
+        .clearfix::after{
+            content: "";
+            display: block;
+            /* clear: right; */
+            clear: both;
+        }
+        
+        /* .float-left{
+            float: left;
+        }
+        .float-right{
+            float: right;
+        }
+        .clear::after{
+            content: 'clearfix';
+            display: block;
+            clear: both;
+        } */
+    </style>
+</head>
+<body>
+    <h1>MERN Fullstack</h1>
+    <div class="clearfix">
+        <img class="float-left"
+        src="./mern_logo.png" alt="mern_logo" height="250px" width="250px">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste reprehenderit commodi deleniti sapiente hic, rerum possimus? Id autem labore praesentium numquam? Nihil omnis, architecto impedit ad ex aliquam aperiam iure! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima eum quia ducimus alias expedita in dolor sunt, numquam, architecto possimus officiis ipsam, ipsa nemo. Placeat fugiat similique ad ut. Nemo. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi laboriosam deserunt labore? Mollitia ipsam laudantium dicta vitae reiciendis quae nostrum provident, ipsa deleniti pariatur animi consequatur eos maxime? Eos, molestias. Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem fugiat repudiandae eius quas aliquid ut qui reprehenderit? Neque blanditiis praesentium deleniti aliquid vel quaerat temporibus? Nostrum explicabo esse veritatis amet. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod assumenda, dicta reprehenderit est incidunt obcaecati ut minima exercitationem dolores maiores tenetur enim alias velit? At ut possimus provident harum ad. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo totam quasi aliquid perspiciatis aliquam dignissimos. Perspiciatis ipsum odit porro, veritatis reiciendis, quibusdam recusandae ad id cupiditate consequatur quas sequi et Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro vel illum perferendis tenetur omnis tempore cumque atque quidem asperiores voluptatum debitis itaque voluptates facere, officiis provident libero temporibus dolorem enim?. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas voluptas odit vero beatae asperiores reiciendis? Veritatis, sunt. Alias tenetur placeat tempora fuga dolore, maiores voluptatum, incidunt quos nesciunt ut nisi? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates impedit, atque nisi aspernatur odio itaque molestiae rerum! Officia quidem vitae officiis rerum provident mollitia aliquid nesciunt sapiente earum dolorem. Animi.</p>
+    </div>
+    <hr>
+    
+    <div class="clearfix">
+        <img class="float-right"
+        src="./mern_logo.png" alt="mern_logo" height="250px" width="250px">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste reprehenderit commodi deleniti sapiente hic, rerum possimus? Id autem labore praesentium numquam? Nihil omnis, architecto impedit ad ex aliquam aperiam iure! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima eum quia ducimus alias expedita in dolor sunt, numquam, architecto possimus officiis ipsam, ipsa nemo. Placeat fugiat similique ad ut. Nemo. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi laboriosam deserunt labore? Mollitia ipsam laudantium dicta vitae reiciendis quae nostrum provident, ipsa deleniti pariatur animi c
+    onsequatur eos maxime? Eos, molestias.</p>
+    </div>
+    <hr>
+    <div class="clearfix">
+        <img class="float-left" src="./mern_logo.png" alt="mern_logo" height="250px" width="250px">
+        <img class="float-left" src="./mern_logo.png" alt="mern_logo" height="250px" width="250px">
+        <img class="float-left" src="./mern_logo.png" alt="mern_logo" height="250px" width="250px">
+    </div>
+     
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Description" content="CSS-Grid:Manually Placing Item">
+    <title>CSS-Grid:Manually Placing Item</title>
+    <style>
+        html{
+            padding: 0;
+            margin: 0;
+        }
+         body{
+             font-family: sans-serif;
+             font-size: 1rem;
+            }
+            .photo-example img{
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+                grid-template-rows: 100px 170px 60px;
+                
+                /* max-width: 700px;
+                margin: 20px auto; */
+            }
+            .photo-example{
+                display: grid;
+                max-width: 700px;
+                margin: 20px auto;
+            }
+
+            .photo-example img{
+                grid-column: 1;
+                grid-row: 1;
+                max-width: 100%;
+                display: block;
+                align-self: end;
+            }
+            .overlay-text{
+                /* grid-column: span 2; */
+                /* grid-column: 3 / 5; */
+               grid-column: 1 / 5;
+               /*1 / -1 */ 
+               grid-row: 1 / 4;
+               color: #ffff;
+               background-color: rgba(0,0, 0, 0.308);
+               padding: 20px;
+               font-size: 0.85rem;
+               line-height: 1.7;
+               align-self: start;
+            }
+            .overlay-text p{
+                margin: 0;
+            }
+    </style>
+</head>
+<body>
+   <div class="photo-example">
+       <img src="./golden.jpg" alt="dog-image" width="700px" height="500px">
+       <div class="overlay-text">
+           <p>Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae eius pariatur veritatis impedit, esse aliquam vel autem obcaecati commodi, inventore, tenetur explicabo similique ea deserunt debitis nam? Adipisci, sunt quos. adipisicing elit. Nemo debitis magni officiis sit dolorem, earum alias perspiciatis laborum natus. Reprehenderit perferendis eligendi praesentium fuga animi ad ratione sequi numquam recusandae?</p>
+       </div>
+   </div> 
+</body>
+</html>

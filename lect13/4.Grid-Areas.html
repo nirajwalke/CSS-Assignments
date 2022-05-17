@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Description" content="CSS-Grid-Areas">
+    <title>CSS-Grid-Areas</title>
+    <style>
+       html,
+       body{
+           margin: 0;
+           padding: 0;
+       }
+       body{
+         font-family: Georgia, 'Times New Roman', Times, serif;
+         font-size: 1rem;
+       }
+       .layout{
+           display: grid;
+           grid-template-columns: 1fr 2.5fr;
+           grid-template-areas: 
+           "header header"
+           "sidebar main"
+           "sidebar footer";
+       }
+       .header{
+           background-color: rgb(113, 113,175);
+           color: #fff;
+           padding: 20px;
+           grid-area: header;
+       }
+       .sidebar{
+           background-color: #ddd;
+           font-size: 0.8rem;
+           color: #999;
+           padding: 20px;
+           grid-area: sidebar;
+       }
+       .main{
+           padding: 20px;
+           line-height: 1.7;
+           grid-area: main;
+        }
+        .footer{
+            background-color: rgb(77, 77,77);
+            color: #fff;
+            padding: 15px;
+            font-size: 0.75rem;
+            grid-area: footer;
+            align-self: end;
+        }
+        @media screen and (max-width:720px) {
+            .layout{
+           display: grid;
+           grid-template-columns: 1fr 2.5fr;
+           grid-template-areas: 
+           "header header"
+           "sidebar sidebar"
+           "main main"
+           "footer footer";
+       }
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="layout">
+        <div class="header">This is the Header</div>
+        <div class="main">
+            <p>This is main section Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed odio molestiae provident tempore perferendis eum aliquam doloremque natus a possimus fuga minus totam incidunt veritatis velit ab, Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum laborum id, voluptas nulla quae ipsum adipisci doloribus voluptatem amet odit numquam corrupti rerum perferendis molestias libero exercitationem. Hic, nemo enim?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, fugit animi quam in pariatur quibusdam impedit, doloribus at id molestiae, odio excepturi minus! Hic fuga, vel eum molestias repudiandae id?  reprehenderit cupiditate et. </p> </div>
+            <div class="sidebar">
+                <p>
+                   This is sidebaar section Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur quibusdam repellendus tenetur, modi, accusantium veritatis tempora voluptatem sint sunt, omnis deserunt soluta illo vero alias iusto? Unde, minus! Minus, assumenda.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, beatae voluptatem reprehenderit velit debitis ea possimus perspiciatis maiores et nesciunt omnis voluptate, architecto recusandae ad sequi dolorem, doloribus laudantium illo!
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur quibusdam repellendus tenetur, modi, accusantium veritatis tempora voluptatem sint sunt, omnis deserunt soluta illo vero alias iusto? Unde, minus! Minus, assumenda.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, beatae voluptatem reprehenderit velit debitis ea possimus perspiciatis maiores et nesciunt omnis voluptate, architecto recusandae ad sequi dolorem, doloribus laudantium illo!
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur quibusdam repellendus tenetur, modi, accusantium veritatis tempora voluptatem sint sunt, omnis deserunt soluta illo vero alias iusto? Unde, minus! Minus, assumenda.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, beatae voluptatem reprehenderit velit debitis ea possimus perspiciatis maiores et nesciunt omnis voluptate, architecto recusandae ad sequi dolorem, doloribus laudantium illo!
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur quibusdam repellendus tenetur, modi, accusantium veritatis tempora voluptatem sint sunt, omnis deserunt soluta illo vero alias iusto? Unde, minus! Minus, assumenda.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, beatae voluptatem reprehenderit velit debitis ea possimus perspiciatis maiores et nesciunt omnis voluptate, architecto recusandae ad sequi dolorem, doloribus laudantium illo!
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur quibusdam repellendus tenetur, modi, accusantium veritatis tempora voluptatem sint sunt, omnis deserunt soluta illo vero alias iusto? Unde, minus! Minus, assumenda.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, beatae voluptatem reprehenderit velit debitis ea possimus perspiciatis maiores et nesciunt omnis voluptate, architecto recusandae ad sequi dolorem, doloribus laudantium illo!
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur quibusdam repellendus tenetur, modi, accusantium veritatis tempora voluptatem sint sunt, omnis deserunt soluta illo vero alias iusto? Unde, minus! Minus, assumenda.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, beatae voluptatem reprehenderit velit debitis ea possimus perspiciatis maiores et nesciunt omnis voluptate, architecto recusandae ad sequi dolorem, doloribus laudantium illo!
+                </p>
+            </div>
+            <div class="footer">
+                &copy;2021
+            </div>
+    </div>
+</body>
+</html>

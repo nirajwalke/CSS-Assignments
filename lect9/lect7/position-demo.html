@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Description" content="Position-Demo">
+    <title>Position-Demo</title>
+    <style>
+       aside{
+           display: block;
+           margin: 40px 0;
+           height: 250px;
+           position: relative;
+       }
+         aside h3{
+             /* aside= parent
+                h3=child */
+             font: bold 12px georgia;
+             /* font -short hand property:-font-weight:- font-size:-font-family ; */
+             letter-spacing: 2px;
+             text-transform: uppercase;
+             background: #369;
+             color: #fff;
+             padding: 5px 10px;
+             /* padding- short hand property: top and bottm=5px , left and right=10px; */
+             margin:0 0 10px 0 ;
+             /* margin-short hand property:top=0,right=0,bottom=10px,left=0 */
+             line-height: 24px;
+         }
+         .csstransforms{
+             border-left: 34px solid #369;
+             padding-left: 10px;
+         }
+         .csstransforms h3{
+             position: absolute;
+             top: 0;
+             left: 0;
+             transform-origin: 0 0;
+             transform: rotate(90deg);
+         }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <aside class="csstransforms">
+            <h3>Heading and Paragraph</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa ex neque consequatur aut reiciendis repellat voluptas vitae ratione commodi enim numquam quam nobis natus ab veritatis sunt, magnam animi voluptatibus aliquam expedita, doloremque totam facilis? Modi, adipisci. Animi aperiam voluptates minus repellat perferendis consequuntur, libero quam dignissimos facere ut? Officia. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium consequatur consectetur quod, non, sit, earum unde illo provident itaque culpa vel nihil eius sunt labore impedit inventore qui asperiores expedita. </p>
+
+        </aside>   
+        <aside class="csstransforms">
+            <h3>Heading and Paragraph</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae nihil commodi, quisquam cupiditate qui, nesciunt quo, eum molestias tenetur eligendi sunt error molestiae accusantium eius architecto velit sit laboriosam ad? Et nisi doloribus temporibus quod ipsam nulla praesentium eligendi dolor reprehenderit ad consectetur ab error, repudiandae culpa numquam aspernatur eveniet.</p>
+
+        </aside>
+    </div>
+</body>
+</html>

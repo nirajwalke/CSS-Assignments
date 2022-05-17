@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Description" content="CSS-Flex-Responsive-Nav-Bar">
+    <title>CSS-Flex-Responsive-Nav-Bar</title>
+    <style>
+        .container > li{
+            padding: 10px ;
+            text-align: center;
+            list-style-type: none;
+            font-size: 2em;
+            box-sizing: border-box;
+            color: #ffeead;
+            background-color: #96ceb4;
+        }
+        html,body{
+            background-color: #ffeead;
+            margin: 10px;
+        }
+        .container{
+            padding: 0;
+        }
+        .search-input{
+            background: #ff6e68;
+            border: 0;
+            width: 100%;
+            outline: 0;
+            background: transparent;
+            border-bottom: 1px solid #ffeead;
+            color: #ffeead; 
+        }
+        ::placeholder{
+            color: #ffeead;
+        }
+        .search-input:focus{
+            outline: none;
+        }
+        .container{
+            display: flex;
+            border: 5px solid #ffcc5c;
+        }
+        .search{
+            flex: 1;
+        }
+        @media screen and (max-width:600px){
+            .container{
+                flex-wrap: wrap;
+            }
+            .container > li{
+                flex: 1 1 50%;
+            }
+            .search-input{
+                text-align: center;
+            } 
+        }
+          @media screen and (max-width:400px){
+              .container{
+                  flex-wrap: wrap;
+              }
+              .container > li{
+                  flex: 1 1 100%;
+              }
+              .search{
+                  order: 1;
+              }
+              }
+    </style>
+</head>
+<body>
+    <nav>
+       <ul class="container">
+           <li>Home</li>
+           <li>Profile</li>
+           <li class="search">
+              <input type="text" class="search-input" placeholder="Search"> </li>
+           <li>Logout</li>
+       </ul>
+    </nav>
+</body>
+</html>

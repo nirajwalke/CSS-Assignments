@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Description" content="CSS-Position:Fixed">
+    <title>CSS-Position:Fixed</title>
+    <style>
+        /* 
+        position:fixed;
+        this element can be fixed at the specified position.
+        Element will be fixed and not move on the page
+        top; right; bottom;left;
+        */
+        body,html{
+         height: 100%;
+        }
+          h1 {
+              text-align: center;
+              margin-top: 100px;
+          }
+          p {
+              margin: 0 auto;
+              max-width: 600px;
+              margin-top: 40px;
+              line-height: 1.5;
+              text-align: justify;
+          }
+          body{
+              font-family: Georgia, 'Times New Roman', Times, serif;
+          }
+          .announcement-top{
+              background-color: red;
+              opacity: .85;
+              padding: 20px;
+              color:rgba(255, 255, 255, 0.9);
+              position: fixed;
+              z-index: -1; 
+              /* z-index: 1; */
+                 top: 0;
+                 left: 0;
+                 right: 0;
+                 text-align: center;
+          }
+          .announcement-bottom{
+              position: fixed;
+              bottom: 0;
+              /* bottom: 25%; */
+              left: 0;
+              right: 0;
+              background-color: #3b043b;
+              z-index: -1;
+              padding: 20px;
+              text-align: center;
+              color: rgb(187, 182, 182);
+              opacity: 0.85;
+          }
+          .side-bar{
+              position: fixed;
+              /* left: 0; */
+              right: 0;
+              top: 250px;
+              bottom: 170px;
+              background-color: teal;
+              opacity: 0.85;
+              padding:0 20px 0 0;
+              /* text-align: justify; */
+              font-size: 20px;
+              color: white;
+              font-family: Georgia, 'Times New Roman', Times, serif;
+             padding-left: 20px;
+  }
+        .test{
+            position: fixeds;
+            background-color: blue;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="announcement-top">Get this 10% off</div>
+    <!-- <div class="announcement-bottom">Fixed element at the end of the page</div> -->
+    <pre class="side-bar">
+        S
+        I
+        D
+        E
+         
+        B
+        A
+        R
+    </pre>
+    <h1>Position:Fixed</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe dolorum sunt officia illo eos, enim rerum voluptatem minima aliquam et asperiores omnis, neque reiciendis debitis minus! Possimus, beatae laboriosam rem expedita iure, ratione dolorem nam, commodi unde error corporis laborum voluptate in dignissimos. Cupiditate ut modi aliquam minima velit, tempora laborum quisquam magni odit praesentium cumque maxime nam impedit. Beatae ab accusantium quidem expedita reiciendis voluptate aperiam dolorem deleniti, recusandae est placeat at quae laboriosam iure officia unde rem dignissimos error quis et non vitae saepe. Ad enim quos assumenda quis itaque, corrupti quia culpa inventore illo illum iste reprehenderit quaerat recusandae earum nam veritatis, rem reiciendis distinctio repellendus tempore quam excepturi odit? Expedita possimus dicta labore eos assumenda est atque ullam exercitationem mollitia soluta cupiditate ex facilis dolor sapiente suscipit, laboriosam sed, nemo, praesentium sunt itaque vel asperiores cumque. Porro, aspernatur possimus? Similique soluta inventore harum, deserunt voluptatibus possimus. Consectetur vero esse distinctio illo fuga ut atque deleniti saepe pariatur laudantium quam, vel dolorum quaerat fugiat voluptates debitis sit id doloremque enim hic reiciendis iure error. Consequuntur totam illo eum architecto dolorum cupiditate animi voluptate libero necessitatibus consequatur possimus aliquid atque enim asperiores aperiam, recusandae magnam nisi facilis et. Adipisci facilis placeat voluptas eveniet nemo cupiditate dicta rem, asperiores, saepe laudantium assumenda nostrum error repellat. Quo autem veritatis animi, cumque dolor sint voluptatibus temporibus quos non, laudantium, sequi iure ullam quod? Nulla nisi pariatur dolores illo dicta laboriosam. Cupiditate iusto quidem perferendis dolorem totam? Reiciendis maxime reprehenderit animi harum officiis similique soluta adipisci odit illo tempore architecto unde iste rem optio placeat debitis odio delectus magnam, doloremque vitae nostrum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim dolore ex vero, sed voluptas pariatur vel doloremque, itaque rem laboriosam iusto velit minus necessitatibus consectetur natus ducimus autem, nisi perspiciatis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique quasi, vel voluptatem commodi dicta qui facilis sunt quod doloremque tenetur laboriosam nulla exercitationem. Eaque fugiat praesentium et expedita, illum reiciendis officiis nesciunt culpa aspernatur error vitae cumque sapiente minima autem saepe quo possimus alias sunt laudantium delectus aliquam nihil, doloribus voluptate voluptatem? Necessitatibus, molestiae. Recusandae necessitatibus beatae voluptates illum quaerat nobis atque placeat doloremque modi! Veritatis nam modi odio velit expedita vitae fugiat impedit ipsam placeat. Repudiandae delectus iure excepturi officia quidem ex unde culpa fuga! Quisquam obcaecati consequatur non ex voluptate? Rem cupiditate eveniet et Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias itaque repudiandae ipsa odit accusamus vel quis rem mollitia nobis repellendus numquam libero, tempora consectetur, ad facere dolorum error accusantium. Distinctio! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo alias id ipsa sunt iure suscipit odit provident ipsam, animi error! Quidem porro consectetur nobis nihil, aut optio earum excepturi delectus?Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias quibusdam suscipit blanditiis omnis, soluta repudiandae ullam ipsum rem voluptatem architecto nobis quos eligendi et id iure asperiores temporibus earum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo quibusdam odit quas quisquam illum aliquam corrupti dolor rerum incidunt aperiam, et a, nam necessitatibus laborum culpa sint explicabo nihil omnis!  perspicia\
+    </p>
+    <h1 class="test">Hello...</h1>
+</body>
+</html>
